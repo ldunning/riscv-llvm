@@ -40,6 +40,8 @@ class InstRISCV<int size, dag outs, dag ins, string asmstr,
 
   let TSFlags{0} = SimpleLoad;
   let TSFlags{1} = SimpleStore;
+
+  field bits<32> SoftFail = 0;
 }
 
 /***************
